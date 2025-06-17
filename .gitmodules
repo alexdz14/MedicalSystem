@@ -1,0 +1,9 @@
+[submodule "PacienteApp"]
+	path = PacienteApp
+	url = https://github.com/alexdz14/PacienteApp.git
+[submodule "ClienteConsultasMedicas"]
+	path = ClienteConsultasMedicas
+	url = https://github.com/alexdz14/ClienteConsultasMedicas.git
+[submodule "MedicalAPI"]
+	path = MedicalAPI
+	url = https://github.com/alexdz14/MedicalAPI.git
