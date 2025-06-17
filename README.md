@@ -1,7 +1,7 @@
 
 # 🏥 Sistema de Consultas Médicas para Clínicas Rurales
 
-Este proyecto es un sistema distribuido orientado a facilitar la atención médica en clínicas rurales o con recursos limitados. Permite agendar citas, registrar consultas, dar seguimiento al historial clínico de los pacientes y operar en modo offline. Está compuesto por una API RESTful, una aplicación de escritorio y un módulo web para pacientes.
+Este proyecto es un sistema distribuido orientado a facilitar la atención médica en clínicas rurales o con recursos limitados. Permite agendar citas, registrar consultas, dar seguimiento al historial clínico de los pacientes y operar en modo offline. Está compuesto por una API RESTful, una aplicación de escritorio y un módulo para pacientes.
 
 ---
 
@@ -10,7 +10,7 @@ Este proyecto es un sistema distribuido orientado a facilitar la atención médi
 - **Backend (API RESTful)**: ASP.NET Core
 - **Frontend Escritorio (Cliente Rico)**: WPF en C#
 - **Frontend Web (Pacientes)**: HTML/JS con consumo de API
-- **Base de datos**: PostgreSQL o MariaDB
+- **Base de datos**: MongoDB
 - **Autenticación**: JWT + hashing de contraseñas
 - **Arquitectura**: Tres capas (presentación, negocio, datos)
 
@@ -22,7 +22,7 @@ Este proyecto es un sistema distribuido orientado a facilitar la atención médi
 |---------------|------------------------------------------------------|
 | Médico        | Acceso completo a historial clínico, registro de consultas |
 | Recepcionista | Gestión de citas y usuarios                          |
-| Paciente      | Acceso web a sus citas e historial                   |
+| Paciente      | Acceso a sus citas e historial                   |
 
 ---
 
@@ -47,8 +47,8 @@ Este repositorio contiene tres submódulos:
 
 ```
 MedicalSystem/
-├── PacienteApp/               # Módulo web para pacientes
-├── ClienteConsultasMedicas/   # Aplicación de escritorio (WPF)
+├── PacienteApp/               # Aplicación WPF para pacientes
+├── ClienteConsultasMedicas/   # Aplicación WPF para médicos/recepcionistas
 └── MedicalAPI/                # API RESTful (ASP.NET Core)
 ```
 
@@ -66,7 +66,7 @@ git clone --recurse-submodules https://github.com/alexdz14/MedicalSystem.git
 
 - `MedicalAPI`: Monta la base de datos, configura las variables de entorno y lanza la API.
 - `ClienteConsultasMedicas`: Ejecuta la aplicación WPF desde Visual Studio.
-- `PacienteApp`: Lanza el servidor web o abre el HTML según configuración.
+- `PacienteApp`: Ejecuta la aplicación WPF desde Visual Studio.
 
 ---
 
@@ -91,7 +91,7 @@ git clone --recurse-submodules https://github.com/alexdz14/MedicalSystem.git
 
 ---
 
-## 👨‍💻 Autores
+## 👨‍💻 
 
 Desarrollado como parte del proyecto final para la EE **Tecnologías para Integración de Soluciones**, Universidad Veracruzana.
 
