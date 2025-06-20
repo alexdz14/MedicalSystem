@@ -97,7 +97,7 @@ git clone --recurse-submodules https://github.com/alexdz14/MedicalSystem.git
 
 📺 **Guía en video:**
 
-[![Ver video explicativo](https://img.youtube.com/vi/w-mSIVsuHdM/0.jpg)](https://youtu.be/w-mSIVsuHdM)
+[Ver video explicativo](https://youtu.be/w-mSIVsuHdM)
 
 ---
 
