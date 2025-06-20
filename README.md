@@ -56,17 +56,48 @@ MedicalSystem/
 
 ## 🚀 Cómo ejecutar
 
-1. Clonar el repositorio con submódulos:
+1. **Clonar el repositorio con submódulos:**
 
 ```bash
 git clone --recurse-submodules https://github.com/alexdz14/MedicalSystem.git
 ```
 
-2. Accede a cada submódulo y sigue las instrucciones específicas para ejecutar:
+2. **Acceder a cada submódulo y seguir las instrucciones específicas para ejecutar:**
 
-- `MedicalAPI`: Monta la base de datos, configura las variables de entorno y lanza la API.
+- `MedicalAPI`: Crear la base de datos y lanzar la API.
 - `ClienteConsultasMedicas`: Ejecuta la aplicación WPF desde Visual Studio.
 - `PacienteApp`: Ejecuta la aplicación WPF desde Visual Studio.
+
+3. **Configurar la base de datos en MongoDB:**
+
+- Abre **MongoDB Compass**.
+- Crea una nueva conexión con el nombre: `clinica_db`.
+- Dentro de esta conexión, crea una **nueva base de datos** llamada `clinica_db`.
+- Añade una **colección** también llamada `clinica_db`.
+
+4. **Abrir los proyectos en Visual Studio 2022:**
+
+- Abre Visual Studio y selecciona la opción **"Crear un nuevo proyecto" > "Solución en blanco"**.
+- Cuando se cargue la solución, ve a `Archivo > Agregar > Proyecto existente...`.
+- Selecciona los siguientes archivos `.csproj` descargados de los submódulos:
+  - `ClinicaConsulta.csproj`
+  - `MedicalAPI.csproj`
+  - `PacienteApp.csproj`
+- En el **Explorador de soluciones**, haz clic derecho sobre la solución y selecciona:  
+  `Establecer proyectos de inicio > Configurar proyectos de inicio...`
+- Marca la opción **"Varios proyectos de inicio"**.
+- Asigna la **acción de inicio** a los tres proyectos.
+- Haz clic en **Aplicar** y luego en **Aceptar**.
+
+---
+
+✅ Con esto podrás ejecutar correctamente **la API y ambas aplicaciones WPF al mismo tiempo** desde Visual Studio 2022.
+
+---
+
+📺 **Guía en video:**
+
+[![Ver video explicativo](https://img.youtube.com/vi/w-mSIVsuHdM/0.jpg)](https://youtu.be/w-mSIVsuHdM)
 
 ---
 
